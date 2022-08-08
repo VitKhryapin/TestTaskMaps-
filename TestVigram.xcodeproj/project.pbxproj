@@ -9,25 +9,57 @@
 /* Begin PBXBuildFile section */
 		FB14232F289E516000CEC210 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB14232E289E516000CEC210 /* AppDelegate.swift */; };
 		FB142331289E516000CEC210 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB142330289E516000CEC210 /* SceneDelegate.swift */; };
-		FB142333289E516000CEC210 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB142332289E516000CEC210 /* ViewController.swift */; };
+		FB142333289E516000CEC210 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB142332289E516000CEC210 /* MapViewController.swift */; };
 		FB142336289E516100CEC210 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB142334289E516100CEC210 /* Main.storyboard */; };
 		FB142338289E516200CEC210 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB142337289E516200CEC210 /* Assets.xcassets */; };
 		FB14233B289E516200CEC210 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB142339289E516200CEC210 /* LaunchScreen.storyboard */; };
+		FB175FBF28A13A870088B555 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB175FBE28A13A870088B555 /* Alert.swift */; };
+		FB175FC728A142110088B555 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB175FC628A142110088B555 /* CustomButton.swift */; };
+		FB175FD028A14A5E0088B555 /* TestVigramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB175FCF28A14A5E0088B555 /* TestVigramTests.swift */; };
+		FB175FDA28A1580F0088B555 /* Preview.png in Resources */ = {isa = PBXBuildFile; fileRef = FB175FD928A1580F0088B555 /* Preview.png */; };
+		FB2487EA289E8424004530DF /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2487E9289E8424004530DF /* NetworkService.swift */; };
+		FB2487EC289E844C004530DF /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2487EB289E844C004530DF /* Model.swift */; };
+		FB2487EE289FABCD004530DF /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2487ED289FABCD004530DF /* NetworkDataFetcher.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB175FD128A14A5E0088B555 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB142323289E516000CEC210 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB14232A289E516000CEC210;
+			remoteInfo = TestVigram;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		FB14232B289E516000CEC210 /* TestVigram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestVigram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB14232E289E516000CEC210 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB142330289E516000CEC210 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FB142332289E516000CEC210 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FB142332289E516000CEC210 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		FB142335289E516100CEC210 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FB142337289E516200CEC210 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB14233A289E516200CEC210 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB14233C289E516200CEC210 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB175FBE28A13A870088B555 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		FB175FC628A142110088B555 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		FB175FCD28A14A5E0088B555 /* TestVigramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestVigramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB175FCF28A14A5E0088B555 /* TestVigramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVigramTests.swift; sourceTree = "<group>"; };
+		FB175FD928A1580F0088B555 /* Preview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Preview.png; sourceTree = "<group>"; };
+		FB2487E9289E8424004530DF /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		FB2487EB289E844C004530DF /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		FB2487ED289FABCD004530DF /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FB142328289E516000CEC210 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB175FCA28A14A5E0088B555 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				FB14232D289E516000CEC210 /* TestVigram */,
+				FB175FCE28A14A5E0088B555 /* TestVigramTests */,
 				FB14232C289E516000CEC210 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				FB14232B289E516000CEC210 /* TestVigram.app */,
+				FB175FCD28A14A5E0088B555 /* TestVigramTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +90,77 @@
 		FB14232D289E516000CEC210 /* TestVigram */ = {
 			isa = PBXGroup;
 			children = (
-				FB14232E289E516000CEC210 /* AppDelegate.swift */,
-				FB142330289E516000CEC210 /* SceneDelegate.swift */,
-				FB142332289E516000CEC210 /* ViewController.swift */,
-				FB142334289E516100CEC210 /* Main.storyboard */,
-				FB142337289E516200CEC210 /* Assets.xcassets */,
-				FB142339289E516200CEC210 /* LaunchScreen.storyboard */,
+				FB175FC128A13BC60088B555 /* Model */,
+				FB175FC528A13D040088B555 /* View */,
+				FB175FC428A13CC00088B555 /* Controller */,
+				FB175FC028A13BB40088B555 /* ServiceLayer */,
+				FB175FC328A13CA80088B555 /* Alert,CustomButton */,
+				FB175FC228A13C830088B555 /* SomeFiles */,
 				FB14233C289E516200CEC210 /* Info.plist */,
 			);
 			path = TestVigram;
+			sourceTree = "<group>";
+		};
+		FB175FC028A13BB40088B555 /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				FB2487ED289FABCD004530DF /* NetworkDataFetcher.swift */,
+				FB2487E9289E8424004530DF /* NetworkService.swift */,
+			);
+			path = ServiceLayer;
+			sourceTree = "<group>";
+		};
+		FB175FC128A13BC60088B555 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB2487EB289E844C004530DF /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FB175FC228A13C830088B555 /* SomeFiles */ = {
+			isa = PBXGroup;
+			children = (
+				FB175FD928A1580F0088B555 /* Preview.png */,
+				FB142339289E516200CEC210 /* LaunchScreen.storyboard */,
+				FB142330289E516000CEC210 /* SceneDelegate.swift */,
+				FB14232E289E516000CEC210 /* AppDelegate.swift */,
+				FB142337289E516200CEC210 /* Assets.xcassets */,
+			);
+			path = SomeFiles;
+			sourceTree = "<group>";
+		};
+		FB175FC328A13CA80088B555 /* Alert,CustomButton */ = {
+			isa = PBXGroup;
+			children = (
+				FB175FBE28A13A870088B555 /* Alert.swift */,
+				FB175FC628A142110088B555 /* CustomButton.swift */,
+			);
+			path = "Alert,CustomButton";
+			sourceTree = "<group>";
+		};
+		FB175FC428A13CC00088B555 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FB142332289E516000CEC210 /* MapViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FB175FC528A13D040088B555 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FB142334289E516100CEC210 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FB175FCE28A14A5E0088B555 /* TestVigramTests */ = {
+			isa = PBXGroup;
+			children = (
+				FB175FCF28A14A5E0088B555 /* TestVigramTests.swift */,
+			);
+			path = TestVigramTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +183,24 @@
 			productReference = FB14232B289E516000CEC210 /* TestVigram.app */;
 			productType = "com.apple.product-type.application";
 		};
+		FB175FCC28A14A5E0088B555 /* TestVigramTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB175FD328A14A5E0088B555 /* Build configuration list for PBXNativeTarget "TestVigramTests" */;
+			buildPhases = (
+				FB175FC928A14A5E0088B555 /* Sources */,
+				FB175FCA28A14A5E0088B555 /* Frameworks */,
+				FB175FCB28A14A5E0088B555 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB175FD228A14A5E0088B555 /* PBXTargetDependency */,
+			);
+			name = TestVigramTests;
+			productName = TestVigramTests;
+			productReference = FB175FCD28A14A5E0088B555 /* TestVigramTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +213,10 @@
 				TargetAttributes = {
 					FB14232A289E516000CEC210 = {
 						CreatedOnToolsVersion = 13.4;
+					};
+					FB175FCC28A14A5E0088B555 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = FB14232A289E516000CEC210;
 					};
 				};
 			};
@@ -116,6 +234,7 @@
 			projectRoot = "";
 			targets = (
 				FB14232A289E516000CEC210 /* TestVigram */,
+				FB175FCC28A14A5E0088B555 /* TestVigramTests */,
 			);
 		};
 /* End PBXProject section */
@@ -125,9 +244,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB175FDA28A1580F0088B555 /* Preview.png in Resources */,
 				FB14233B289E516200CEC210 /* LaunchScreen.storyboard in Resources */,
 				FB142338289E516200CEC210 /* Assets.xcassets in Resources */,
 				FB142336289E516100CEC210 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB175FCB28A14A5E0088B555 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,13 +265,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB142333289E516000CEC210 /* ViewController.swift in Sources */,
+				FB2487EE289FABCD004530DF /* NetworkDataFetcher.swift in Sources */,
+				FB2487EC289E844C004530DF /* Model.swift in Sources */,
+				FB142333289E516000CEC210 /* MapViewController.swift in Sources */,
 				FB14232F289E516000CEC210 /* AppDelegate.swift in Sources */,
+				FB175FC728A142110088B555 /* CustomButton.swift in Sources */,
+				FB2487EA289E8424004530DF /* NetworkService.swift in Sources */,
 				FB142331289E516000CEC210 /* SceneDelegate.swift in Sources */,
+				FB175FBF28A13A870088B555 /* Alert.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB175FC928A14A5E0088B555 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB175FD028A14A5E0088B555 /* TestVigramTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB175FD228A14A5E0088B555 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB14232A289E516000CEC210 /* TestVigram */;
+			targetProxy = FB175FD128A14A5E0088B555 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FB142334289E516100CEC210 /* Main.storyboard */ = {
@@ -336,6 +484,42 @@
 			};
 			name = Release;
 		};
+		FB175FD428A14A5E0088B555 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DVBMX6UX88;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Khryapin-Vitalya.TestVigramTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestVigram.app/TestVigram";
+			};
+			name = Debug;
+		};
+		FB175FD528A14A5E0088B555 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DVBMX6UX88;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Khryapin-Vitalya.TestVigramTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestVigram.app/TestVigram";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -353,6 +537,15 @@
 			buildConfigurations = (
 				FB142340289E516200CEC210 /* Debug */,
 				FB142341289E516200CEC210 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB175FD328A14A5E0088B555 /* Build configuration list for PBXNativeTarget "TestVigramTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB175FD428A14A5E0088B555 /* Debug */,
+				FB175FD528A14A5E0088B555 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
