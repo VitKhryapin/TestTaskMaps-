@@ -1,8 +1,8 @@
 //
-//  Protocols.swift
+//  Protocol.swift
 //  TestVigram
 //
-//  Created by Vitaly Khryapin on 09.08.2022.
+//  Created by Vitaly Khryapin on 10.08.2022.
 //
 
 import Foundation
