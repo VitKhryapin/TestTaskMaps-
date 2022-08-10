@@ -4,8 +4,7 @@
 Приложение: 
   + показывает текущее местоположение пользователя;
   + подгружает координаты точек и линий;
-  + отображает точки и линии на карте;
-  + имеет UnitTests на получение данных и определение местоположения
+  + отображает точки и линии на карте.
   
 ### Preview App
 <img src="https://github.com/VitKhryapin/TestTaskMaps-/blob/main/TestVigram/AppSupport/Preview.png" width="150"> 
