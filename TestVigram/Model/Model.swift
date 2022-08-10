@@ -20,7 +20,7 @@ struct ResultObjects: Codable {
 
 // MARK: - Line
 struct Line: Codable {
-    let type: LineType
+    let type: LineType?
     let properties: LineProperties
     let geometry: LineGeometry
 }
@@ -71,5 +71,3 @@ struct PointProperties: Codable {
         case modified, color, visible, latitude, longitude, elevation
     }
 }
-
-

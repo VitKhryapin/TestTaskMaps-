@@ -7,16 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01A0995FA1EAF0A7E6DDDF51 /* Pods_TestVigram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A10E35201D39A2D7B1DED80 /* Pods_TestVigram.framework */; };
+		40AC4B3F6F87AED0D5C74B25 /* Pods_TestVigramTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF9FAFB335A6DED4EB25AB32 /* Pods_TestVigramTests.framework */; };
 		FB14232F289E516000CEC210 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB14232E289E516000CEC210 /* AppDelegate.swift */; };
 		FB142331289E516000CEC210 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB142330289E516000CEC210 /* SceneDelegate.swift */; };
 		FB142333289E516000CEC210 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB142332289E516000CEC210 /* MapViewController.swift */; };
 		FB142336289E516100CEC210 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB142334289E516100CEC210 /* Main.storyboard */; };
 		FB142338289E516200CEC210 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB142337289E516200CEC210 /* Assets.xcassets */; };
 		FB14233B289E516200CEC210 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB142339289E516200CEC210 /* LaunchScreen.storyboard */; };
-		FB175FBF28A13A870088B555 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB175FBE28A13A870088B555 /* Alert.swift */; };
+		FB175FBF28A13A870088B555 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB175FBE28A13A870088B555 /* UIViewController+Extension.swift */; };
 		FB175FC728A142110088B555 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB175FC628A142110088B555 /* CustomButton.swift */; };
 		FB175FD028A14A5E0088B555 /* TestVigramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB175FCF28A14A5E0088B555 /* TestVigramTests.swift */; };
 		FB175FDA28A1580F0088B555 /* Preview.png in Resources */ = {isa = PBXBuildFile; fileRef = FB175FD928A1580F0088B555 /* Preview.png */; };
+		FB175FDE28A2D79F0088B555 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB175FDD28A2D79F0088B555 /* Protocols.swift */; };
 		FB2487EA289E8424004530DF /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2487E9289E8424004530DF /* NetworkService.swift */; };
 		FB2487EC289E844C004530DF /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2487EB289E844C004530DF /* Model.swift */; };
 		FB2487EE289FABCD004530DF /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2487ED289FABCD004530DF /* NetworkDataFetcher.swift */; };
@@ -33,6 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A10E35201D39A2D7B1DED80 /* Pods_TestVigram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestVigram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5400DF88677D10DB675A2F64 /* Pods-TestVigram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestVigram.release.xcconfig"; path = "Target Support Files/Pods-TestVigram/Pods-TestVigram.release.xcconfig"; sourceTree = "<group>"; };
+		850B8AB8F05BF07CDE4316A9 /* Pods-TestVigram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestVigram.debug.xcconfig"; path = "Target Support Files/Pods-TestVigram/Pods-TestVigram.debug.xcconfig"; sourceTree = "<group>"; };
+		9751252AEA02D24171D72F07 /* Pods-TestVigramTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestVigramTests.debug.xcconfig"; path = "Target Support Files/Pods-TestVigramTests/Pods-TestVigramTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BF9FAFB335A6DED4EB25AB32 /* Pods_TestVigramTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestVigramTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB14232B289E516000CEC210 /* TestVigram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestVigram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB14232E289E516000CEC210 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB142330289E516000CEC210 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,14 +49,16 @@
 		FB142337289E516200CEC210 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB14233A289E516200CEC210 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB14233C289E516200CEC210 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FB175FBE28A13A870088B555 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		FB175FBE28A13A870088B555 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		FB175FC628A142110088B555 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		FB175FCD28A14A5E0088B555 /* TestVigramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestVigramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB175FCF28A14A5E0088B555 /* TestVigramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVigramTests.swift; sourceTree = "<group>"; };
 		FB175FD928A1580F0088B555 /* Preview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Preview.png; sourceTree = "<group>"; };
+		FB175FDD28A2D79F0088B555 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Protocols.swift; path = ../../../../../Desktop/Protocols.swift; sourceTree = "<group>"; };
 		FB2487E9289E8424004530DF /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		FB2487EB289E844C004530DF /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		FB2487ED289FABCD004530DF /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
+		FBF2D60644EE676E75C61C64 /* Pods-TestVigramTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestVigramTests.release.xcconfig"; path = "Target Support Files/Pods-TestVigramTests/Pods-TestVigramTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01A0995FA1EAF0A7E6DDDF51 /* Pods_TestVigram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,18 +74,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40AC4B3F6F87AED0D5C74B25 /* Pods_TestVigramTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		429C12BEDB54BCD5264F1359 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A10E35201D39A2D7B1DED80 /* Pods_TestVigram.framework */,
+				BF9FAFB335A6DED4EB25AB32 /* Pods_TestVigramTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E49580C7FDF564B42BDD8517 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				850B8AB8F05BF07CDE4316A9 /* Pods-TestVigram.debug.xcconfig */,
+				5400DF88677D10DB675A2F64 /* Pods-TestVigram.release.xcconfig */,
+				9751252AEA02D24171D72F07 /* Pods-TestVigramTests.debug.xcconfig */,
+				FBF2D60644EE676E75C61C64 /* Pods-TestVigramTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FB142322289E516000CEC210 = {
 			isa = PBXGroup;
 			children = (
 				FB14232D289E516000CEC210 /* TestVigram */,
 				FB175FCE28A14A5E0088B555 /* TestVigramTests */,
 				FB14232C289E516000CEC210 /* Products */,
+				E49580C7FDF564B42BDD8517 /* Pods */,
+				429C12BEDB54BCD5264F1359 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,12 +124,14 @@
 		FB14232D289E516000CEC210 /* TestVigram */ = {
 			isa = PBXGroup;
 			children = (
+				FB142334289E516100CEC210 /* Main.storyboard */,
 				FB175FC128A13BC60088B555 /* Model */,
-				FB175FC528A13D040088B555 /* View */,
-				FB175FC428A13CC00088B555 /* Controller */,
+				FB175FC428A13CC00088B555 /* ViewControllers */,
 				FB175FC028A13BB40088B555 /* ServiceLayer */,
-				FB175FC328A13CA80088B555 /* Alert,CustomButton */,
-				FB175FC228A13C830088B555 /* SomeFiles */,
+				FB175FDC28A2D7810088B555 /* Protocols */,
+				FB175FC328A13CA80088B555 /* Extension */,
+				FB175FDB28A2A26E0088B555 /* Views */,
+				FB175FC228A13C830088B555 /* AppSupport */,
 				FB14233C289E516200CEC210 /* Info.plist */,
 			);
 			path = TestVigram;
@@ -118,7 +154,7 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		FB175FC228A13C830088B555 /* SomeFiles */ = {
+		FB175FC228A13C830088B555 /* AppSupport */ = {
 			isa = PBXGroup;
 			children = (
 				FB175FD928A1580F0088B555 /* Preview.png */,
@@ -127,32 +163,23 @@
 				FB14232E289E516000CEC210 /* AppDelegate.swift */,
 				FB142337289E516200CEC210 /* Assets.xcassets */,
 			);
-			path = SomeFiles;
+			path = AppSupport;
 			sourceTree = "<group>";
 		};
-		FB175FC328A13CA80088B555 /* Alert,CustomButton */ = {
+		FB175FC328A13CA80088B555 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				FB175FBE28A13A870088B555 /* Alert.swift */,
-				FB175FC628A142110088B555 /* CustomButton.swift */,
+				FB175FBE28A13A870088B555 /* UIViewController+Extension.swift */,
 			);
-			path = "Alert,CustomButton";
+			path = Extension;
 			sourceTree = "<group>";
 		};
-		FB175FC428A13CC00088B555 /* Controller */ = {
+		FB175FC428A13CC00088B555 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				FB142332289E516000CEC210 /* MapViewController.swift */,
 			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		FB175FC528A13D040088B555 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				FB142334289E516100CEC210 /* Main.storyboard */,
-			);
-			path = View;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		FB175FCE28A14A5E0088B555 /* TestVigramTests */ = {
@@ -163,6 +190,22 @@
 			path = TestVigramTests;
 			sourceTree = "<group>";
 		};
+		FB175FDB28A2A26E0088B555 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FB175FC628A142110088B555 /* CustomButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FB175FDC28A2D7810088B555 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FB175FDD28A2D79F0088B555 /* Protocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -170,6 +213,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB14233F289E516200CEC210 /* Build configuration list for PBXNativeTarget "TestVigram" */;
 			buildPhases = (
+				D25AB9F7ADC220A848A1DC4C /* [CP] Check Pods Manifest.lock */,
+				FB175FE028A2EB0D0088B555 /* ShellScript */,
 				FB142327289E516000CEC210 /* Sources */,
 				FB142328289E516000CEC210 /* Frameworks */,
 				FB142329289E516000CEC210 /* Resources */,
@@ -187,6 +232,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB175FD328A14A5E0088B555 /* Build configuration list for PBXNativeTarget "TestVigramTests" */;
 			buildPhases = (
+				567CF78507A33DAAF108F6FF /* [CP] Check Pods Manifest.lock */,
 				FB175FC928A14A5E0088B555 /* Sources */,
 				FB175FCA28A14A5E0088B555 /* Frameworks */,
 				FB175FCB28A14A5E0088B555 /* Resources */,
@@ -260,6 +306,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		567CF78507A33DAAF108F6FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestVigramTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D25AB9F7ADC220A848A1DC4C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestVigram-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB175FE028A2EB0D0088B555 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FB142327289E516000CEC210 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -268,11 +378,12 @@
 				FB2487EE289FABCD004530DF /* NetworkDataFetcher.swift in Sources */,
 				FB2487EC289E844C004530DF /* Model.swift in Sources */,
 				FB142333289E516000CEC210 /* MapViewController.swift in Sources */,
+				FB175FDE28A2D79F0088B555 /* Protocols.swift in Sources */,
 				FB14232F289E516000CEC210 /* AppDelegate.swift in Sources */,
 				FB175FC728A142110088B555 /* CustomButton.swift in Sources */,
 				FB2487EA289E8424004530DF /* NetworkService.swift in Sources */,
 				FB142331289E516000CEC210 /* SceneDelegate.swift in Sources */,
-				FB175FBF28A13A870088B555 /* Alert.swift in Sources */,
+				FB175FBF28A13A870088B555 /* UIViewController+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +541,7 @@
 		};
 		FB142340289E516200CEC210 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 850B8AB8F05BF07CDE4316A9 /* Pods-TestVigram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -458,6 +570,7 @@
 		};
 		FB142341289E516200CEC210 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5400DF88677D10DB675A2F64 /* Pods-TestVigram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -486,6 +599,7 @@
 		};
 		FB175FD428A14A5E0088B555 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9751252AEA02D24171D72F07 /* Pods-TestVigramTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -504,6 +618,7 @@
 		};
 		FB175FD528A14A5E0088B555 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBF2D60644EE676E75C61C64 /* Pods-TestVigramTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;

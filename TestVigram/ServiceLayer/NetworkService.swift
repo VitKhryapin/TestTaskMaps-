@@ -7,8 +7,8 @@
 
 import Foundation
 
-class NetworkService {
-    func getObjects(completion: @escaping (Result<ResultObjects?, Error>) -> ()) {
+final class NetworkService {
+    func getObjects(completion: @escaping (Result<ResultObjects?, Error>) -> Void) {
         let urlString = "http://a0532495.xsph.ru/getPoint"
         guard let url = URL(string: urlString) else { return }
         URLSession.shared.dataTask(with: url) { data, _, error in
