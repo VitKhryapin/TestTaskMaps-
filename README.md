@@ -8,7 +8,7 @@
   + имеет UnitTests на получение данных и определение местоположения
   
 ### Preview App
-<img src="https://github.com/VitKhryapin/TestTaskMaps-/blob/main/TestVigram/SomeFiles/Preview.png" width="150"> 
+<img src="https://github.com/VitKhryapin/TestTaskMaps-/blob/main/TestVigram/AppSupport/Preview.png" width="150"> 
 
 
 ### Stack
@@ -19,6 +19,7 @@
 + Auto Layout.
 + URLSession.
 + Codable.
++ SwiftLint
 + XCTests.
 
 #### P.S.:  В симуляторе необходимо установить Features -> Location -> Custom Location...
