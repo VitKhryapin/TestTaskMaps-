@@ -96,10 +96,12 @@ final class MapViewController: UIViewController {
         for line in lines {
             let coordinatPoint1 = line.geometry.coordinates[0]
             let coordinatPoint2 = line.geometry.coordinates[1]
-            guard let latitude = coordinatPoint1[safe: 1] else {return}
-            guard let longitude = coordinatPoint1[safe: 0] else {return}
-            let point1 = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
-            let point2 = CLLocationCoordinate2D(latitude: coordinatPoint2[0], longitude: coordinatPoint2[1])
+            guard let latitude1 = coordinatPoint1[safe: 1] else {return}
+            guard let longitude1 = coordinatPoint1[safe: 0] else {return}
+            guard let latitude2 = coordinatPoint2[safe: 1] else {return}
+            guard let longitude2 = coordinatPoint2[safe: 0] else {return}
+            let point1 = CLLocationCoordinate2D(latitude: latitude1, longitude: longitude1)
+            let point2 = CLLocationCoordinate2D(latitude: latitude2, longitude: longitude2)
             mapView.addOverlay(MKPolyline(coordinates: [point1, point2], count: 2))
         }
     }
