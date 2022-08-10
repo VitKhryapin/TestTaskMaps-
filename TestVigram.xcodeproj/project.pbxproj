@@ -19,7 +19,6 @@
 		FB175FC728A142110088B555 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB175FC628A142110088B555 /* CustomButton.swift */; };
 		FB175FD028A14A5E0088B555 /* TestVigramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB175FCF28A14A5E0088B555 /* TestVigramTests.swift */; };
 		FB175FDA28A1580F0088B555 /* Preview.png in Resources */ = {isa = PBXBuildFile; fileRef = FB175FD928A1580F0088B555 /* Preview.png */; };
-		FB175FDE28A2D79F0088B555 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB175FDD28A2D79F0088B555 /* Protocols.swift */; };
 		FB2487EA289E8424004530DF /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2487E9289E8424004530DF /* NetworkService.swift */; };
 		FB2487EC289E844C004530DF /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2487EB289E844C004530DF /* Model.swift */; };
 		FB2487EE289FABCD004530DF /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2487ED289FABCD004530DF /* NetworkDataFetcher.swift */; };
@@ -41,6 +40,7 @@
 		850B8AB8F05BF07CDE4316A9 /* Pods-TestVigram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestVigram.debug.xcconfig"; path = "Target Support Files/Pods-TestVigram/Pods-TestVigram.debug.xcconfig"; sourceTree = "<group>"; };
 		9751252AEA02D24171D72F07 /* Pods-TestVigramTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestVigramTests.debug.xcconfig"; path = "Target Support Files/Pods-TestVigramTests/Pods-TestVigramTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BF9FAFB335A6DED4EB25AB32 /* Pods_TestVigramTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestVigramTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB0FE53228A3B88900C5CEC5 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		FB14232B289E516000CEC210 /* TestVigram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestVigram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB14232E289E516000CEC210 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB142330289E516000CEC210 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,7 +54,6 @@
 		FB175FCD28A14A5E0088B555 /* TestVigramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestVigramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB175FCF28A14A5E0088B555 /* TestVigramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVigramTests.swift; sourceTree = "<group>"; };
 		FB175FD928A1580F0088B555 /* Preview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Preview.png; sourceTree = "<group>"; };
-		FB175FDD28A2D79F0088B555 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Protocols.swift; path = ../../../../../Desktop/Protocols.swift; sourceTree = "<group>"; };
 		FB2487E9289E8424004530DF /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		FB2487EB289E844C004530DF /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		FB2487ED289FABCD004530DF /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
@@ -101,6 +100,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		FB0FE53128A3B87800C5CEC5 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FB0FE53228A3B88900C5CEC5 /* Protocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		FB142322289E516000CEC210 = {
 			isa = PBXGroup;
 			children = (
@@ -128,7 +135,7 @@
 				FB175FC128A13BC60088B555 /* Model */,
 				FB175FC428A13CC00088B555 /* ViewControllers */,
 				FB175FC028A13BB40088B555 /* ServiceLayer */,
-				FB175FDC28A2D7810088B555 /* Protocols */,
+				FB0FE53128A3B87800C5CEC5 /* Protocols */,
 				FB175FC328A13CA80088B555 /* Extension */,
 				FB175FDB28A2A26E0088B555 /* Views */,
 				FB175FC228A13C830088B555 /* AppSupport */,
@@ -196,14 +203,6 @@
 				FB175FC628A142110088B555 /* CustomButton.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		FB175FDC28A2D7810088B555 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				FB175FDD28A2D79F0088B555 /* Protocols.swift */,
-			);
-			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,7 +377,6 @@
 				FB2487EE289FABCD004530DF /* NetworkDataFetcher.swift in Sources */,
 				FB2487EC289E844C004530DF /* Model.swift in Sources */,
 				FB142333289E516000CEC210 /* MapViewController.swift in Sources */,
-				FB175FDE28A2D79F0088B555 /* Protocols.swift in Sources */,
 				FB14232F289E516000CEC210 /* AppDelegate.swift in Sources */,
 				FB175FC728A142110088B555 /* CustomButton.swift in Sources */,
 				FB2487EA289E8424004530DF /* NetworkService.swift in Sources */,
