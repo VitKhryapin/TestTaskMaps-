@@ -42,7 +42,7 @@ extension MapViewController: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         let polylineRenderer = MKPolylineRenderer(polyline: overlay as! MKPolyline)
         polylineRenderer.strokeColor = UIColor.green
-        polylineRenderer.lineWidth = 5.0
+        polylineRenderer.lineWidth = 1.0
         return polylineRenderer
     }
 }

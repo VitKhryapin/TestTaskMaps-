@@ -93,16 +93,16 @@ final class MapViewController: UIViewController {
     
     // MARK: - AnnotationsBlock
     func getAnnotationLine(lines: [Line]) {
-        for line in lines {
-            let coordinatPoint1 = line.geometry.coordinates[0]
-            let coordinatPoint2 = line.geometry.coordinates[1]
-            guard let latitude1 = coordinatPoint1[safe: 1] else {return}
-            guard let longitude1 = coordinatPoint1[safe: 0] else {return}
-            guard let latitude2 = coordinatPoint2[safe: 1] else {return}
-            guard let longitude2 = coordinatPoint2[safe: 0] else {return}
-            let point1 = CLLocationCoordinate2D(latitude: latitude1, longitude: longitude1)
-            let point2 = CLLocationCoordinate2D(latitude: latitude2, longitude: longitude2)
-            mapView.addOverlay(MKPolyline(coordinates: [point1, point2], count: 2))
+        let geomtryLines = lines.map({$0.geometry.coordinates})
+        for coordinatesLine in geomtryLines {
+            var pointsCoordination = [CLLocationCoordinate2D]()
+            for coordinate in coordinatesLine {
+                guard let latitude = coordinate[safe: 1] else {return}
+                guard let longitude = coordinate[safe: 0] else {return}
+                let point = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+                pointsCoordination.append(point)
+            }
+            mapView.addOverlay(MKPolyline(coordinates: pointsCoordination, count: pointsCoordination.count))
         }
     }
     
